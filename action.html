@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Action | ClimateActionNow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Climate<span>Action</span>Now</div>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="action.html" class="active">Take Action</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(30, 58, 31, 0.8), rgba(30, 58, 31, 0.8)), url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+        <div class="container">
+            <h1>Your Actions Matter</h1>
+            <p>Join millions of people taking meaningful action to combat climate change every day.</p>
+        </div>
+    </section>
+
+    <!-- Carbon Calculator -->
+    <section id="calculator">
+        <div class="container">
+            <div class="section-title">
+                <h2>Carbon Footprint Calculator</h2>
+                <p>Understand your environmental impact and discover ways to reduce it</p>
+            </div>
+            
+            <div class="calculator-container">
+                <form id="carbonCalculator">
+                    <div class="form-group">
+                        <label for="electricity">Monthly Electricity Usage (kWh)</label>
+                        <input type="number" id="electricity" placeholder="Enter kWh">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="gas">Monthly Natural Gas Usage (therms)</label>
+                        <input type="number" id="gas" placeholder="Enter therms">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="carMileage">Annual Car Mileage (miles)</label>
+                        <input type="number" id="carMileage" placeholder="Enter miles">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="flights">Annual Flight Hours</label>
+                        <input type="number" id="flights" placeholder="Enter hours">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="diet">Primary Diet</label>
+                        <select id="diet">
+                            <option value="meat-heavy">Meat-Heavy Diet</option>
+                            <option value="meat-moderate">Moderate Meat Consumption</option>
+                            <option value="vegetarian">Vegetarian</option>
+                            <option value="vegan">Vegan</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="waste">Waste Production Level</label>
+                        <select id="waste">
+                            <option value="high">High (1+ bags/week)</option>
+                            <option value="medium">Medium (1 bag/week)</option>
+                            <option value="low">Low (less than 1 bag/week)</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn">Calculate My Footprint</button>
+                </form>
+                
+                <div class="results" id="results">
+                    <h3>Your Carbon Footprint Results</h3>
+                    <p>Your estimated annual carbon footprint is: <strong id="totalEmissions">0.0</strong> tons CO2e</p>
+                    
+                    <h4>Breakdown by Category:</h4>
+                    <ul>
+                        <li>Electricity: <span id="electricityResult">0.0</span> tons</li>
+                        <li>Natural Gas: <span id="gasResult">0.0</span> tons</li>
+                        <li>Transportation: <span id="carResult">0.0</span> tons</li>
+                        <li>Air Travel: <span id="flightResult">0.0</span> tons</li>
+                        <li>Diet: <span id="dietResult">0.0</span> tons</li>
+                        <li>Waste: <span id="wasteResult">0.0</span> tons</li>
+                    </ul>
+                    
+                    <div class="action-btns">
+                        <a href="solutions.html" class="btn">See Reduction Strategies</a>
+                        <a href="#community" class="btn btn-outline">Join Community Challenge</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advocacy Section -->
+    <section id="advocacy" style="background-color: var(--accent);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Advocate for Change</h2>
+                <p>Make your voice heard and drive systemic change</p>
+            </div>
+            
+            <div class="action-cards">
+                <div class="action-card">
+                    <div class="action-icon">📝</div>
+                    <h3>Sign Petitions</h3>
+                    <p>Support critical climate initiatives with your signature</p>
+                    <a href="#" class="btn">View Current Petitions</a>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">✉️</div>
+                    <h3>Contact Leaders</h3>
+                    <p>Send messages to your elected representatives</p>
+                    <a href="#" class="btn">Find Your Representatives</a>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">📢</div>
+                    <h3>Join Campaigns</h3>
+                    <p>Participate in organized climate action campaigns</p>
+                    <a href="#" class="btn">Explore Campaigns</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community">
+        <div class="container">
+            <div class="section-title">
+                <h2>Join Our Community</h2>
+                <p>Connect with others and amplify your impact</p>
+            </div>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Local Groups">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Find Local Groups</h3>
+                        <p>Connect with climate action groups in your area working on local initiatives and projects.</p>
+                        <a href="#" class="btn">Find Groups Near You</a>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Events">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Attend Events</h3>
+                        <p>Join workshops, cleanups, and climate strikes happening in your community.</p>
+                        <a href="#" class="btn">View Event Calendar</a>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Challenges">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Participate in Challenges</h3>
+                        <p>Join community challenges to reduce waste, conserve energy, and promote sustainability.</p>
+                        <a href="#" class="btn">View Current Challenges</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ClimateActionNow</h3>
+                    <p>Empowering individuals and communities to take meaningful action against climate change through education, tools, and collective action.</p>
+                    <div class="social-links">
+                        <a href="#"><span>f</span></a>
+                        <a href="#"><span>t</span></a>
+                        <a href="#"><span>in</span></a>
+                        <a href="#"><span>ig</span></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="solutions.html">Climate Solutions</a></li>
+                        <li><a href="action.html">Take Action</a></li>
+                        <li><a href="resources.html">Educational Resources</a></li>
+                        <li><a href="settings.html">Account Settings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="resources.html">Climate Science</a></li>
+                        <li><a href="resources.html">Policy Advocacy</a></li>
+                        <li><a href="resources.html">Community Toolkit</a></li>
+                        <li><a href="action.html">Carbon Calculator</a></li>
+                        <li><a href="resources.html">Educational Materials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li>Email: info@climateactionnow.org</li>
+                        <li>Phone: +1 (555) 123-4567</li>
+                        <li>Address: 123 Green Way, Eco City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 ClimateActionNow. All rights reserved. Join the movement to protect our planet.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
