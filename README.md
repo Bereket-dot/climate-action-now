@@ -1,4 +1,4 @@
-#ClimateActionNow: Your Personal Climate Action Hub
+# ClimateActionNow: Your Personal Climate Action Hub
 
 I built this website to tackle one of the biggest problems we face, climate change, by making solutions simple, actionable, and personal.
 
